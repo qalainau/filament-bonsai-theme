@@ -1,0 +1,749 @@
+/*
+ * bonsai-theme
+ * Japanese-style high-density UI theme for Filament v5
+ *
+ * Designed for sales/inventory/order management systems (販売管理・在庫管理・受注管理)
+ * that require compact, information-dense form layouts.
+ */
+
+/* =========================================
+   Base font
+   ========================================= */
+
+.fi-body {
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+    font-family: 'Noto Sans JP', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans',
+        Meiryo, ui-sans-serif, system-ui, sans-serif,
+        'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+        'Noto Color Emoji' !important;
+}
+
+/* =========================================
+   Page layout
+   ========================================= */
+
+.fi-page-header-main-ctn {
+    row-gap: 0.5rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+}
+
+.fi-page-content {
+    row-gap: 0.5rem !important;
+}
+
+.fi-header {
+    row-gap: 0.25rem !important;
+}
+
+.fi-header-heading {
+    font-size: 1.125rem !important;
+    line-height: 1.75rem !important;
+}
+
+.fi-header-subheading {
+    font-size: 13px !important;
+}
+
+/* =========================================
+   ALL schema/grid/form/flex gaps → 0
+   ========================================= */
+
+.fi-sc.fi-sc-has-gap,
+.fi-sc.fi-sc-has-gap.fi-sc-dense {
+    gap: 0 !important;
+}
+
+.fi-sc-form,
+.fi-sc-form.fi-dense {
+    gap: 0 !important;
+}
+
+.fi-sc-flex,
+.fi-sc-flex.fi-dense {
+    gap: 0 !important;
+}
+
+/* =========================================
+   Section
+   ========================================= */
+
+.fi-section:not(.fi-section-not-contained) {
+    border-radius: 0.5rem !important;
+}
+
+.fi-section:not(.fi-section-not-contained):not(.fi-aside) > .fi-section-header {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    padding-top: 0.375rem !important;
+    padding-bottom: 0.375rem !important;
+}
+
+.fi-section:not(.fi-section-not-contained):not(.fi-divided) > .fi-section-content-ctn > .fi-section-content {
+    padding: 0.75rem !important;
+}
+
+.fi-section:not(.fi-section-not-contained).fi-divided > .fi-section-content-ctn > .fi-section-content > * {
+    padding: 0.75rem !important;
+}
+
+.fi-section:not(.fi-section-not-contained) > .fi-section-content-ctn > .fi-section-footer {
+    padding-left: 0.75rem !important;
+    padding-right: 0.75rem !important;
+    padding-top: 0.375rem !important;
+    padding-bottom: 0.375rem !important;
+}
+
+.fi-section.fi-section-not-contained {
+    row-gap: 0 !important;
+}
+
+.fi-section.fi-section-not-contained > .fi-section-content-ctn {
+    row-gap: 0 !important;
+}
+
+.fi-section.fi-aside {
+    column-gap: 0.5rem !important;
+    row-gap: 0 !important;
+}
+
+.fi-section .fi-section-header-heading {
+    font-size: 0.875rem !important;
+    line-height: 1.25rem !important;
+    font-weight: 600 !important;
+}
+
+.fi-section .fi-section-header-description {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+.fi-sc-section {
+    gap: 0 !important;
+}
+
+.fi-sc-section .fi-sc-section-label-ctn .fi-sc-section-label {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+    font-weight: 600 !important;
+    letter-spacing: 0.025em !important;
+    text-transform: uppercase !important;
+    color: #6b7280 !important;
+}
+
+:is(.dark) .fi-sc-section .fi-sc-section-label-ctn .fi-sc-section-label {
+    color: #9ca3af !important;
+}
+
+/* =========================================
+   Fieldset
+   ========================================= */
+
+.fi-fieldset:not(.fi-fieldset-not-contained) {
+    border-radius: 0.5rem !important;
+    padding: 0.75rem !important;
+}
+
+.fi-fieldset.fi-fieldset-not-contained {
+    padding-top: 0.5rem !important;
+}
+
+.fi-fieldset > legend {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+/* =========================================
+   Field wrapper
+   ========================================= */
+
+.fi-fo-field {
+    row-gap: 0 !important;
+}
+
+.fi-fo-field.fi-fo-field-has-inline-label {
+    column-gap: 0.25rem !important;
+}
+
+.fi-fo-field .fi-fo-field-label-content {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+    font-weight: 500 !important;
+    color: #4b5563 !important;
+}
+
+:is(.dark) .fi-fo-field .fi-fo-field-label-content {
+    color: #9ca3af !important;
+}
+
+.fi-fo-field .fi-fo-field-label-content .fi-fo-field-label-required-mark {
+    font-size: 10px !important;
+}
+
+.fi-fo-field .fi-fo-field-wrp-error-message {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+.fi-fo-field .fi-fo-field-content-col {
+    row-gap: 0 !important;
+}
+
+.fi-fo-field .fi-fo-field-label-col {
+    row-gap: 0 !important;
+}
+
+.fi-fo-field .fi-fo-field-content-ctn {
+    column-gap: 0.25rem !important;
+}
+
+.fi-fo-field .fi-fo-field-label-ctn,
+.fi-fo-field .fi-fo-field-label {
+    column-gap: 0.25rem !important;
+}
+
+/* =========================================
+   Input wrapper
+   ========================================= */
+
+.fi-input-wrp {
+    border-radius: 0.25rem !important;
+    box-shadow: none !important;
+    --tw-ring-offset-shadow: var(--tw-ring-inset, ) 0 0 0 var(--tw-ring-offset-width, 0px) var(--tw-ring-offset-color, #fff) !important;
+    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width, 0px)) var(--tw-ring-color) !important;
+    --tw-ring-color: #d1d5db !important;
+}
+
+:is(.dark) .fi-input-wrp {
+    --tw-ring-color: #4b5563 !important;
+}
+
+/* =========================================
+   Text input
+   ========================================= */
+
+input.fi-input {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+}
+
+/* =========================================
+   Select (native)
+   ========================================= */
+
+select.fi-select-input {
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    padding-inline-start: 0.5rem !important;
+    padding-inline-end: 1.75rem !important;
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+}
+
+/* Select (JS) */
+.fi-select-input .fi-select-input-btn {
+    min-height: 0 !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    padding-inline-start: 0.5rem !important;
+    padding-inline-end: 1.75rem !important;
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+    border-radius: 0.25rem !important;
+}
+
+.fi-select-input div[x-ref='select'] {
+    min-height: 0 !important;
+}
+
+/* =========================================
+   Textarea
+   ========================================= */
+
+.fi-fo-textarea {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+}
+
+/* =========================================
+   Date picker
+   ========================================= */
+
+input[type='date'].fi-input,
+input[type='datetime-local'].fi-input,
+input[type='time'].fi-input {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+}
+
+/* =========================================
+   Checkbox & Radio
+   ========================================= */
+
+.fi-fo-radio {
+    gap: 0 !important;
+}
+
+.fi-fo-radio .fi-fo-radio-label {
+    column-gap: 0.25rem !important;
+}
+
+.fi-fo-radio .fi-fo-radio-label-text {
+    font-size: 13px !important;
+}
+
+.fi-fo-checkbox-list .fi-fo-checkbox-list-options {
+    gap: 0 !important;
+}
+
+/* =========================================
+   Toggle
+   ========================================= */
+
+.fi-fo-toggle {
+    column-gap: 0.375rem !important;
+}
+
+/* =========================================
+   Repeater
+   ========================================= */
+
+.fi-fo-repeater {
+    gap: 0 !important;
+}
+
+.fi-fo-repeater-item-content {
+    padding: 0.5rem !important;
+}
+
+.fi-fo-repeater-item-header {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.fi-fo-repeater-item-header-label {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+.fi-fo-simple-repeater-item-content {
+    gap: 0 !important;
+}
+
+/* =========================================
+   Tabs
+   ========================================= */
+
+.fi-tabs-tab {
+    padding-left: 0.625rem !important;
+    padding-right: 0.625rem !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    font-size: 13px !important;
+}
+
+/* =========================================
+   Buttons
+   ========================================= */
+
+.fi-btn {
+    font-size: 13px !important;
+}
+
+.fi-btn.fi-size-md {
+    padding-left: 0.625rem !important;
+    padding-right: 0.625rem !important;
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+}
+
+.fi-btn.fi-size-sm {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+}
+
+/* =========================================
+   Sidebar
+   ========================================= */
+
+.fi-sidebar-item-button {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    font-size: 13px !important;
+}
+
+.fi-sidebar-group-label {
+    font-size: 11px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+}
+
+/* =========================================
+   Table container
+   ========================================= */
+
+.fi-ta-ctn {
+    border-radius: 0.375rem !important;
+}
+
+/* Table header area (title/description) */
+.fi-ta-ctn .fi-ta-header {
+    gap: 0.25rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+.fi-ta-ctn .fi-ta-header .fi-ta-header-heading {
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+}
+
+.fi-ta-ctn .fi-ta-header .fi-ta-header-description {
+    margin-top: 0 !important;
+    font-size: 11px !important;
+}
+
+/* Table toolbar (search, filters, etc.) */
+.fi-ta-ctn .fi-ta-header-toolbar {
+    gap: 0.25rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+.fi-ta-ctn .fi-ta-header-toolbar > * {
+    gap: 0.25rem !important;
+}
+
+/* Filters panel */
+.fi-ta-ctn .fi-ta-filters {
+    gap: 0.25rem !important;
+}
+
+.fi-ta-ctn .fi-ta-filters-dropdown .fi-ta-filters,
+.fi-ta-ctn .fi-ta-col-manager-dropdown .fi-ta-col-manager {
+    padding: 0.5rem !important;
+}
+
+.fi-ta-ctn .fi-ta-grouping-settings .fi-ta-grouping-settings-fields {
+    gap: 0.5rem !important;
+    padding: 0.5rem !important;
+}
+
+/* Filter indicators bar */
+.fi-ta-ctn .fi-ta-filter-indicators {
+    padding: 0.125rem 0.5rem !important;
+    gap: 0.25rem !important;
+}
+
+/* Selection indicator bar */
+.fi-ta-ctn .fi-ta-selection-indicator {
+    padding: 0.125rem 0.5rem !important;
+}
+
+/* Reorder indicator */
+.fi-ta-ctn .fi-ta-reorder-indicator {
+    padding: 0.125rem 0.5rem !important;
+    font-size: 13px !important;
+}
+
+/* =========================================
+   Table header cells
+   ========================================= */
+
+.fi-ta-header-cell {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    font-size: 11px !important;
+    letter-spacing: 0.05em !important;
+    text-transform: uppercase !important;
+}
+
+.fi-ta-header-cell:first-of-type {
+    padding-inline-start: 0.5rem !important;
+}
+
+.fi-ta-header-cell:last-of-type {
+    padding-inline-end: 0.5rem !important;
+}
+
+.fi-ta-header-group-cell {
+    padding: 0.125rem 0.25rem !important;
+    font-size: 11px !important;
+}
+
+/* =========================================
+   Table data cells
+   ========================================= */
+
+.fi-ta-cell {
+    padding: 0 0.25rem !important;
+}
+
+.fi-ta-cell:first-of-type {
+    padding-inline-start: 0.5rem !important;
+}
+
+.fi-ta-cell:last-of-type {
+    padding-inline-end: 0.5rem !important;
+}
+
+/* Actions cell */
+.fi-ta-cell:has(.fi-ta-actions) {
+    padding: 0.125rem 0.25rem !important;
+    white-space: nowrap !important;
+}
+
+.fi-ta-cell:has(.fi-ta-actions):first-of-type {
+    padding-inline-start: 0.5rem !important;
+}
+
+.fi-ta-cell:has(.fi-ta-actions):last-of-type {
+    padding-inline-end: 0.5rem !important;
+}
+
+/* Checkbox cell */
+.fi-ta-cell:has(.fi-ta-record-checkbox),
+.fi-ta-cell.fi-ta-selection-cell,
+.fi-ta-cell.fi-ta-group-selection-cell {
+    padding: 0.125rem 0.25rem !important;
+}
+
+/* Summary cells */
+.fi-ta-cell.fi-ta-summary-row-heading-cell,
+.fi-ta-cell.fi-ta-summary-header-cell {
+    padding: 0.125rem 0.25rem !important;
+    font-size: 13px !important;
+}
+
+/* Individual search cell */
+.fi-ta-cell.fi-ta-individual-search-cell {
+    padding: 0.125rem 0.25rem !important;
+}
+
+/* Placeholder text */
+.fi-ta-cell .fi-ta-placeholder {
+    font-size: 13px !important;
+    line-height: 1.25rem !important;
+}
+
+/* =========================================
+   Table row
+   ========================================= */
+
+.fi-ta-row .fi-ta-group-header-cell {
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+}
+
+.fi-ta-row .fi-ta-group-header {
+    padding-top: 0.125rem !important;
+    padding-bottom: 0.125rem !important;
+    gap: 0.25rem !important;
+}
+
+.fi-ta-row .fi-ta-group-heading {
+    font-size: 13px !important;
+}
+
+.fi-ta-row .fi-ta-group-description {
+    font-size: 11px !important;
+}
+
+/* =========================================
+   Table actions (row actions)
+   ========================================= */
+
+.fi-ta-actions {
+    gap: 0.25rem !important;
+}
+
+/* =========================================
+   Table columns: kill py-4 px-3 on ALL column types
+   ========================================= */
+
+.fi-ta-text:not(.fi-inline),
+.fi-ta-text-input:not(.fi-inline),
+.fi-ta-color:not(.fi-inline),
+.fi-ta-toggle:not(.fi-inline),
+.fi-ta-checkbox:not(.fi-inline),
+.fi-ta-select:not(.fi-inline),
+.fi-ta-icon:not(.fi-inline),
+.fi-ta-image:not(.fi-inline) {
+    padding: 0.125rem 0.25rem !important;
+}
+
+/* Summaries */
+.fi-ta-text-summary,
+.fi-ta-range-summary,
+.fi-ta-values-summary,
+.fi-ta-icon-count-summary {
+    padding: 0.125rem 0.25rem !important;
+    font-size: 13px !important;
+}
+
+.fi-ta-text {
+    font-size: 13px !important;
+}
+
+.fi-ta-text-item {
+    font-size: 13px !important;
+    line-height: 1.125rem !important;
+}
+
+/* =========================================
+   Pagination
+   ========================================= */
+
+.fi-ta-ctn .fi-pagination {
+    padding: 0.25rem 0.5rem !important;
+}
+
+.fi-pagination-item-btn {
+    padding: 0.125rem !important;
+}
+
+.fi-pagination-item-btn .fi-pagination-item-label {
+    font-size: 0.75rem !important;
+    padding-left: 0.125rem !important;
+    padding-right: 0.125rem !important;
+}
+
+/* =========================================
+   Empty state (in table)
+   ========================================= */
+
+.fi-ta-ctn .fi-ta-empty-state {
+    padding: 0.75rem !important;
+}
+
+/* =========================================
+   Content layout (grid view)
+   ========================================= */
+
+.fi-ta-content.fi-ta-content-grid {
+    gap: 0.25rem !important;
+    padding: 0.25rem 0.5rem !important;
+}
+
+/* Content layout (list view) record padding */
+.fi-ta-content:not(.fi-ta-content-grid) .fi-ta-record .fi-ta-record-content-ctn {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    gap: 0.25rem !important;
+}
+
+/* Content header (sorting/checkbox bar) */
+.fi-ta-content-ctn .fi-ta-content-header {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+    gap: 0.25rem !important;
+}
+
+.fi-ta-content-ctn .fi-ta-content-header .fi-ta-page-checkbox {
+    margin-top: 0.25rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+.fi-ta-content-ctn .fi-ta-content-header .fi-ta-sorting-settings {
+    padding-top: 0.25rem !important;
+    padding-bottom: 0.25rem !important;
+    gap: 0.25rem !important;
+}
+
+/* =========================================
+   Filters sidebar
+   ========================================= */
+
+.fi-ta-ctn .fi-ta-filters-before-content-ctn .fi-ta-filters,
+.fi-ta-ctn .fi-ta-filters-after-content-ctn .fi-ta-filters {
+    padding: 0.5rem !important;
+}
+
+.fi-ta-ctn .fi-ta-filters-above-content-ctn {
+    padding: 0.25rem 0.5rem !important;
+}
+
+/* Column manager */
+.fi-ta-col-manager {
+    font-size: 13px !important;
+}
+
+/* =========================================
+   Badges
+   ========================================= */
+
+.fi-badge {
+    font-size: 11px !important;
+    padding-left: 0.375rem !important;
+    padding-right: 0.375rem !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+/* =========================================
+   Input wrapper prefix/suffix
+   ========================================= */
+
+.fi-input-wrp .fi-input-wrp-label {
+    font-size: 0.75rem !important;
+    line-height: 1rem !important;
+}
+
+.fi-input-wrp .fi-input-wrp-prefix {
+    padding-inline-start: 0.5rem !important;
+    column-gap: 0.25rem !important;
+}
+
+.fi-input-wrp .fi-input-wrp-suffix {
+    padding-inline-end: 0.5rem !important;
+    column-gap: 0.25rem !important;
+}
+
+.fi-input-wrp .fi-input-wrp-actions {
+    gap: 0.25rem !important;
+}
+
+/* =========================================
+   Dropdown
+   ========================================= */
+
+.fi-dropdown-list-item {
+    font-size: 13px !important;
+}
+
+/* =========================================
+   Modal
+   ========================================= */
+
+.fi-modal-content {
+    padding: 0.75rem !important;
+}
+
+/* =========================================
+   Actions row
+   ========================================= */
+
+.fi-sc-actions-ctn {
+    gap: 0 !important;
+}
+
+.fi-sc-actions-ctn .fi-sc-actions {
+    column-gap: 0.25rem !important;
+}

@@ -209,14 +209,12 @@
 
 .fi-input-wrp {
     border-radius: 0.25rem !important;
+    border: 1px solid #d1d5db !important;
     box-shadow: none !important;
-    --tw-ring-offset-shadow: var(--tw-ring-inset, ) 0 0 0 var(--tw-ring-offset-width, 0px) var(--tw-ring-offset-color, #fff) !important;
-    --tw-ring-shadow: var(--tw-ring-inset, ) 0 0 0 calc(1px + var(--tw-ring-offset-width, 0px)) var(--tw-ring-color) !important;
-    --tw-ring-color: #d1d5db !important;
 }
 
 :is(.dark) .fi-input-wrp {
-    --tw-ring-color: #4b5563 !important;
+    border-color: #4b5563 !important;
 }
 
 /* =========================================
@@ -365,6 +363,15 @@ input[type='time'].fi-input {
 
 .fi-fo-table-repeater.fi-compact table td {
     padding: 0 0.0625rem !important;
+}
+
+.fi-fo-table-repeater .fi-input-wrp {
+    border: none !important;
+    border-radius: 0 !important;
+}
+
+:is(.dark) .fi-fo-table-repeater .fi-input-wrp {
+    border: none !important;
 }
 
 /* =========================================

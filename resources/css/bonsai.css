@@ -346,6 +346,28 @@ input[type='time'].fi-input {
 }
 
 /* =========================================
+   Repeater table layout
+   ========================================= */
+
+.fi-fo-table-repeater table th {
+    padding: 0.125rem 0.375rem !important;
+    font-size: 11px !important;
+    letter-spacing: 0.025em !important;
+}
+
+.fi-fo-table-repeater table td {
+    padding: 0.0625rem 0.125rem !important;
+}
+
+.fi-fo-table-repeater.fi-compact table th {
+    padding: 0.0625rem 0.25rem !important;
+}
+
+.fi-fo-table-repeater.fi-compact table td {
+    padding: 0 0.0625rem !important;
+}
+
+/* =========================================
    Tabs
    ========================================= */
 

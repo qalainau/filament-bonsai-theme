@@ -1,6 +1,6 @@
 {
     "name": "because/bonsai-theme",
-    "description": "Japanese-style high-density UI theme for Filament v5",
+    "description": "High-density, compact UI theme for Filament v5",
     "keywords": ["filament", "laravel", "theme", "japanese", "high-density", "compact", "bonsai"],
     "license": "MIT",
     "type": "library",

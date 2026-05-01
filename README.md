@@ -27,6 +27,14 @@ public function panel(Panel $panel): Panel
 
 No Tailwind build required. The theme ships as pre-compiled CSS and is loaded automatically.
 
+## Screenshots
+
+### Table List
+![Table List](docs/images/table-list.png)
+
+### Edit Form
+![Edit Form](docs/images/edit-form.png)
+
 ## Features
 
 - **Japanese font stack** — Noto Sans JP, Hiragino Kaku Gothic ProN, Hiragino Sans, Meiryo

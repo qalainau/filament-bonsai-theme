@@ -7,7 +7,7 @@ Inspired by Japanese business applications (sales, inventory, order management) 
 ## Installation
 
 ```bash
-composer require because/bonsai-theme
+composer require qalainau/bonsai-theme
 ```
 
 ## Usage
@@ -15,7 +15,7 @@ composer require because/bonsai-theme
 Register the plugin in your panel provider:
 
 ```php
-use Because\BonsaiTheme\BonsaiThemePlugin;
+use Qalainau\BonsaiTheme\BonsaiThemePlugin;
 
 public function panel(Panel $panel): Panel
 {

@@ -1,5 +1,5 @@
 {
-    "name": "because/bonsai-theme",
+    "name": "qalainau/bonsai-theme",
     "description": "High-density, compact UI theme for Filament v5",
     "keywords": ["filament", "laravel", "theme", "japanese", "high-density", "compact", "bonsai"],
     "license": "MIT",
@@ -11,13 +11,13 @@
     },
     "autoload": {
         "psr-4": {
-            "Because\\BonsaiTheme\\": "src/"
+            "Qalainau\\BonsaiTheme\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Because\\BonsaiTheme\\BonsaiThemeServiceProvider"
+                "Qalainau\\BonsaiTheme\\BonsaiThemeServiceProvider"
             ]
         }
     },

@@ -1,6 +1,6 @@
 <?php
 
-namespace Because\BonsaiTheme;
+namespace Qalainau\BonsaiTheme;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;

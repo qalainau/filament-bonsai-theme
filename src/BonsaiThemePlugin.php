@@ -1,6 +1,6 @@
 <?php
 
-namespace Because\BonsaiTheme;
+namespace Qalainau\BonsaiTheme;
 
 use Filament\Contracts\Plugin;
 use Filament\Panel;

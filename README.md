@@ -1,5 +1,7 @@
 # Bonsai Theme
 
+[![Newsletter](https://img.shields.io/badge/newsletter-subscribe-0ea5a3.svg?style=flat-square)](https://webllsystem.com/filament/?ref=filament-bonsai-theme)
+
 High-density, compact UI theme for Filament v5.
 
 Inspired by Japanese business applications (sales, inventory, order management) that prioritize information density, Bonsai Theme reduces padding, gaps, and font sizes across all Filament components to fit more data on screen.
@@ -121,6 +123,12 @@ All standard Filament form fields and table columns are styled:
 - PHP 8.2+
 - Filament v5
 - Laravel 13.x
+
+## Stay Updated
+
+Get release notes, upgrade guides for new Filament versions, and early access to new plugins — a few emails a year, no spam.
+
+**[Subscribe to the newsletter →](https://webllsystem.com/filament/?ref=filament-bonsai-theme)**
 
 ## License
 
